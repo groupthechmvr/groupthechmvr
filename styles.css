@@ -803,3 +803,16 @@ footer {
         padding: 20px;
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    gap: 10px;             /* espaço entre logo e texto */
+}
+
+.logo-img {
+    height: 60px;          /* altura ajustada */
+    width: 60px;           /* mesma largura p/ manter redondo */
+    border-radius: 50%;
+    object-fit: cover;
+}
