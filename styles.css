@@ -9,7 +9,7 @@
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
-    --accent-color: #e74c3c;
+    --accent-color: #0d78f1;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
     --text-color: #333;
@@ -235,8 +235,8 @@ nav ul li a:hover::after {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
 }
 
 .service-card {
@@ -246,6 +246,7 @@ nav ul li a:hover::after {
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 300px;
 }
 
 .service-card:hover {
@@ -266,8 +267,8 @@ nav ul li a:hover::after {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
 }
 
 .portfolio-card {
@@ -275,7 +276,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 250px;
+    height: 400px;
     transition: all 0.5s ease;
     transform-style: preserve-3d;
 }
@@ -285,6 +286,12 @@ nav ul li a:hover::after {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    filter: brightness(0.5);
+}
+
+.portfolio-card h3{
+    color: var(--text-light);
+
 }
 
 .portfolio-card:hover {
@@ -359,7 +366,7 @@ nav ul li a:hover::after {
     background-color: var(--secondary-color);
 }
 
-/* Mapa de Localização 
+/* Mapa de Localização */
 .location {
     padding: 80px 0 0;
 }
@@ -377,9 +384,8 @@ nav ul li a:hover::after {
     height: 100%;
     border: none;
 }
-*/
 
-/* Formulário de Contato 
+/* Formulário de Contato */
 .contact {
     background-color: var(--text-light);
 }
@@ -418,7 +424,6 @@ nav ul li a:hover::after {
     resize: vertical;
     min-height: 150px;
 }
-*/
 
 /* Rodapé */
 footer {
@@ -578,7 +583,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 5px 15px #3498db;
     cursor: pointer;
     transition: all 0.3s ease;
     border: none;
@@ -586,7 +591,7 @@ footer {
 
 .rating-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 8px 25px #3498db;
 }
 
 .rating-modal {

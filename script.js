@@ -37,6 +37,7 @@ backToTop.addEventListener('click', () => {
 });
 
 // Widget de Avaliação
+/*
 const ratingBtn = document.getElementById('rating-btn');
 const ratingModal = document.getElementById('rating-modal');
 const ratingStars = document.querySelectorAll('.rating-star');
@@ -62,6 +63,7 @@ ratingStars.forEach(star => {
     });
 });
 
+
 ratingSubmit.addEventListener('click', () => {
     if (selectedRating > 0) {
         alert(`Obrigado por sua avaliação de ${selectedRating} estrela(s)!`);
@@ -83,6 +85,7 @@ document.addEventListener('click', (e) => {
         ratingModal.classList.remove('active');
     }
 });
+*/
 
 // Carrossel de Depoimentos
 const swiper = new Swiper('.mySwiper', {
