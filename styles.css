@@ -317,7 +317,7 @@ nav ul li a:hover::after {
     bottom: 0;
 }
 
-/* Carrossel de Depoimentos */
+/* Carrossel de Equipe */
 .testimonials {
     background-color: var(--text-light);
     padding: 100px 0;
@@ -336,6 +336,15 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: all 0.3s ease;
+    max-height: 250px; /* Define uma altura limitada */
+    overflow: hidden; /* Esconde o conteúdo excedente */
+    position: relative;
+}
+
+/* Exibir todo o conteúdo ao passar o mouse ou tocar */
+.swiper-slide:hover,
+.swiper-slide:active {
+    max-height: 100%; /* Expande completamente */
 }
 
 .swiper-slide:hover {
